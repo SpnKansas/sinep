@@ -42,7 +42,7 @@ public class LoginBean implements Serializable {
         this.uname = uname;
     }
  
-    public String loginProject() {
+    public String login() {
         boolean result = UsuarioDao.login(uname, password);
         if (result) {
             // get Http Session and store username

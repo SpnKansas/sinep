@@ -15,7 +15,7 @@
 
 					<h:outputText value="Usuário :"/>
 
-					<p:inputText id="usuario" value="#{loginBean.uname}" />
+					<p:inputText id="usuario" value="#{loginBean.uname}" style="text-transform:uppercase"/>
 
 					<p:spacer></p:spacer>
 
@@ -24,7 +24,7 @@
 					<h:outputText value="Senha :" />
 
 					<p:password id="senha" value="#{loginBean.password}"
-						feedback="false" />
+						feedback="false" style="text-transform:uppercase"/>
 
 					<p:spacer></p:spacer>
 
@@ -32,7 +32,7 @@
 
 					<p:spacer></p:spacer>
 
-					<p:commandButton action="#{loginBean.loginProject}" value="Login"
+					<p:commandButton action="#{loginBean.login}" value="Login"
 						update="loginForm" ajax="true" style="width: 200px;"/>
 
 				</h:panelGrid>
