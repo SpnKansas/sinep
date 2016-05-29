@@ -10,9 +10,9 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
  
-@ManagedBean(name = "loginBean")
+@ManagedBean(name = "LoginMB")
 @SessionScoped
-public class LoginBean implements Serializable {
+public class LoginMB implements Serializable {
  
     private static final long serialVersionUID = 1L;
     private String password;
